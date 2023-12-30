@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juice Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Custom Juice Shop</h1>
+  </header>
+
+  <main>
+    <section class="flavors">
+      <h2>Select Flavors</h2>
+      <form id="juiceForm">
+        <div class="flavor-row">
+          <label for="flavor1" class="flavor">
+            <img src="watermelon_mint.jpg" alt="Watermelon Mint">
+            <span class="flavor-info">
+              <span class="flavor-name">Watermelon Mint</span>
+              <span class="flavor-price">Price: 200shs</span>
+            </span>
+            <input type="checkbox" id="flavor1" name="flavor" value="Watermelon Mint">
+          </label>
+        </div>
+
+        <div class="flavor-row">
+          <label for="flavor2" class="flavor">
+            <img src="passion_fruit.jpg" alt="Passion Fruit">
+            <span class="flavor-info">
+              <span class="flavor-name">Passion Fruit</span>
+              <span class="flavor-price">Price: 200shs</span>
+            </span>
+            <input type="checkbox" id="flavor2" name="flavor" value="Passion Fruit">
+          </label>
+        </div>
+
+        <div class="flavor-row">
+          <label for="flavor3" class="flavor">
+            <img src="pineapple.jpg" alt="Pineapple">
+            <span class="flavor-info">
+              <span class="flavor-name">Pineapple</span>
+              <span class="flavor-price">Price: 200shs</span>
+            </span>
+            <input type="checkbox" id="flavor3" name="flavor" value="Pineapple">
+          </label>
+        </div>
+
+        <!-- Add more flavors -->
+        
+        <button type="submit" class="order-button">Place Order</button>
+      </form>
+    </section>
+
+    <section class="order-status" style="display: none;">
+      <!-- Order status will appear here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Custom Juice Shop</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
